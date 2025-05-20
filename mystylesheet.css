@@ -1,0 +1,317 @@
+/* Main */
+* { 
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    box-sizing: border-box;
+}
+body {  
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url("images/1.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+#wrapper {  
+    width: 80%;
+    margin: auto;
+    min-width:850px;
+} 
+/* creates transparent background effect */
+#content { 
+    padding: 20px 20px 20px 20px; 
+    background-color:#4a603c;
+    opacity: 0.7;
+}
+#header1 h1 {
+    font-family: 'Times New Roman', Times, serif;
+    color: #669b3c;
+    margin-left: 10px;
+}
+/* goes after the wrapper and includes most content */
+#content h2 {
+    color: #669b3c;
+    margin: 10px 0px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.Intro {
+    margin: 20px 80px 10px 150px;
+}
+/* Clear floats after the columns */
+.Intro:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.column1,.column2 {
+    float: left;
+    width: 350px;
+    height: 350px;
+}
+.column1 { 
+    background-color: #39492e;
+}
+#propic { 
+    margin: 0px 10px 10px 70px;
+}
+/* Welcome message */
+.hero-text{ 
+    display: block;
+}
+.hero-text h1{ 
+    font-size: 73px;
+    color: #669b3c;
+    margin-bottom: 20px ;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+.hero-text p{ 
+    font-size: 20px;
+    margin-bottom: 18px;
+    font-family: Georgia, serif;
+    color: #cacdd2;
+    text-align: center;
+}
+/* gives brief summary of next pages */
+.preview { display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 2px;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+.preview1, .preview2, .preview3 {
+    width: 250px;
+    height:  270px;
+    padding: 20px 0px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.preview h3 { 
+    text-align: center;
+    color: #39492e;
+    margin-bottom: 10px;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+}
+.preview p{ 
+    padding: 0px 10px;
+    color: #cacdd2;
+}
+.preview img {  
+    background-color: #4a603c;
+    margin-left: 87px; 
+}
+.preview a {  
+    color: #000000;
+    padding: 0px 10px;
+}
+
+/* Footer */
+#footer { 
+    font-size: 15px;
+    text-align: center;
+    padding: 20px;
+    height: 200px;
+    background-color:#39492e;
+    margin-bottom: 15px;
+    border-top: 5px solid #cacdd2;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-column h3 { 
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #669b3c;
+    font-family: Georgia, serif;
+}
+/* contact or summary of website */
+.footer-column p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 12px;
+    color: #cacdd2;
+    margin: 5px;
+}
+.footer-column {
+    float: left;
+    width: 50%;
+    padding: 15px;
+} 
+/* Clear floats after the columns */
+.footer-content-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* inserts social media icon */
+.fa {
+    padding: 10px;
+    font-size: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    text-decoration: none;
+    margin: 2px;
+}
+/* lines icons in line in column 2 */
+.socials a { display: inline-block;}
+
+/* facebook icon */
+.fa-facebook {
+    background: #6b8c5b;
+    color: white;
+}
+
+/* twitter */
+.fa-twitter {
+    background: #6b8c5b;
+    color: white;
+}
+/* google */
+.fa-google {
+    background: #6b8c5b;
+    color: white;
+}
+/* instagram*/
+.fa-instagram {
+    background: #6b8c5b;
+    color: white;
+}
+/* linkedIn */
+.fa-linkedin {
+    background: #6b8c5b;
+    color: white;
+}
+
+/* Navigation Bar */
+#nav { background: #39492e;
+    height: 80px;
+    width: 100%;
+    margin-top: 15px;
+}
+#nav ul { 
+    list-style-type: none;
+    float: right;
+    margin-right: 20px;
+    padding: 0px;
+    background-color: #ffffff;
+    overflow: hidden;
+    font-size: 19px;
+    background-color: #39492e;
+}
+
+#nav ul li {  
+    display: inline-block;
+    line-height: 79px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin: 0px 5px;
+    background-color: #39492e;
+}
+
+#nav ul li a { 
+    color:#6ea044;
+    text-decoration: none; 
+    text-transform: uppercase;
+    font-size: 19px;
+    font-weight: lighter;
+    padding: 8px 3px; 
+    text-align: center;
+    margin-bottom: 0px;
+    background-color: #39492e;
+}
+#nav img{
+    margin-left: 10px;
+}
+
+#nav a.active { 
+    color: #cacdd2;
+    border-bottom: 2px solid #cacdd2
+}
+#nav a:hover {
+    color: #cacdd2;
+}
+
+
+/* Aboout Me */
+#post1 {
+    margin: 10px 10px 30px 10px;
+    padding: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: #cacdd2;
+    background-color: #39492e;
+    line-height: 40px;
+    overflow: hidden;
+}
+#post1 img {
+    float: right;
+    margin: 0px 10px 10px 20px;
+
+}
+#post3 ul li {
+    line-height: 30px;
+    color: #cacdd2;
+}
+#post2, #post3 {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+    font-size: 20px ;
+    margin: 10px 10px 20px 10px;
+    padding: 10px;
+    color: #cacdd2;
+    background-color: #39492e;
+    line-height: 30px;
+}
+
+/* Photos */
+#photos {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 200px;
+    background-color:#4a603c;
+} 
+.gallery:hover {
+    border: 1px solid #777;
+}
+ .gallery img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}  
+.desc {
+    padding: 15px;
+    text-align: center;
+    color: #cacdd2;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Hobbies */
+#post2 img {
+    float: right;
+    margin: 0px 10px 10px 20px;
+}
+#post2 h3 {
+    color: #669b3c;
+    text-decoration: underline;
+}
+
+
+
+
+
